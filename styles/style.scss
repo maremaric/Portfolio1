@@ -1,0 +1,97 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+@import './variables';
+
+/* Global style */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+*:not(i) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:before,:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify__content__between {
+    justify-content: space-between;
+}
+
+/* Header */
+.header {
+    padding: 20px 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header .logo a{
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    color: $Color1;
+    border-radius: 50%;
+    border: 2px solid $Color1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header .hamburger__btn {
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .hamburger__btn span {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: $BgBlock-900;
+}
+
