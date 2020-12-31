@@ -8,6 +8,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
+    background-color: $BgBlock-50;
 }
 
 *:not(i) {
@@ -55,6 +56,19 @@ img {
     justify-content: space-between;
 }
 
+.outer__shadow {
+    box-shadow: $OuterShadow;
+}
+
+.hover__in__shadow {
+    position: relative;
+    z-index: 1;
+}
+
+.hover__in__shadow:hover {
+    box-shadow: $OuterShadow0;
+}
+
 /* Header */
 .header {
     padding: 20px 15px;
@@ -82,10 +96,13 @@ img {
 .header .hamburger__btn {
     height: 40px;
     width: 40px;
-    box-shadow: 0 0 10px;
+    // box-shadow: 0 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
 .header .hamburger__btn span {
@@ -93,5 +110,28 @@ img {
     height: 2px;
     width: 16px;
     background-color: $BgBlock-900;
+    position: relative;
 }
+
+.header .hamburger__btn span:before,
+.header .hamburger__btn span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $BgBlock-900;
+} 
+
+.header .hamburger__btn span:before {
+    top: -6px;
+}
+
+.header .hamburger__btn span:after {
+    top: 6px;
+}
+
+
+
+
 
