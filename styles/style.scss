@@ -60,6 +60,10 @@ img {
     box-shadow: $OuterShadow;
 }
 
+.inner__shadow {
+    box-shadow: $InnerShadow;
+}
+
 .hover__in__shadow {
     position: relative;
     z-index: 1;
@@ -175,6 +179,7 @@ img {
     cursor: pointer;
     text-align: center;
     color: $TextBlock-600;
+    transition: all 0.3s ease;
 }
 
 .nav__menu .close__nav__menu:after {
@@ -189,12 +194,43 @@ img {
 }
 
 .nav__menu ul {
-    background-color: violet;
     padding: 15px;
 }
 
 .nav__menu ul li {
     display: block;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+.nav__menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.nav__menu ul li a {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    color: $TextBlock-700;
+    padding: 5px 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav__menu ul li a.active {
+    color: $Color1;
+}
+
+.nav__menu ul li a:after {
+    border-radius: 30px;
+}
+
+.nav__menu .copyright__text {
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    color: $TextBlock-600;
+    transform: translateY(-50%) rotate(-90deg);
+    left: -60px;
+}

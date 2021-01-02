@@ -64,6 +64,11 @@ img {
           box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
 }
 
+.inner__shadow {
+  -webkit-box-shadow: inset 3px 3px 3px #d0d0d0d0, inset -3px -3px 3px #f8f8f8;
+          box-shadow: inset 3px 3px 3px #d0d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+
 .hover__in__shadow {
   position: relative;
   z-index: 1;
@@ -187,6 +192,8 @@ img {
   cursor: pointer;
   text-align: center;
   color: #666666;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav__menu .close__nav__menu:after {
@@ -207,12 +214,46 @@ img {
 }
 
 .nav__menu ul {
-  background-color: violet;
   padding: 15px;
 }
 
 .nav__menu ul li {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav__menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nav__menu ul li a {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+  color: #555555;
+  padding: 5px 30px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__menu ul li a.active {
+  color: #f50707;
+}
+
+.nav__menu ul li a:after {
+  border-radius: 30px;
+}
+
+.nav__menu .copyright__text {
+  position: absolute;
+  top: 50%;
+  font-size: 15px;
+  color: #666666;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  left: -60px;
 }
 /*# sourceMappingURL=style.css.map */
