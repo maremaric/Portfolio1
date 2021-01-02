@@ -101,6 +101,19 @@ img {
           align-items: center;
 }
 
+.btn-1 {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f50707;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 /* Header */
 .header {
   padding: 20px 15px;
@@ -279,8 +292,26 @@ img {
   padding: 0 15px;
 }
 
-.home__section .home__text {
-  background-color: violet;
+.home__section .home__text p {
+  color: #bbbbbb;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.home__section .home__text h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.home__section .home__text h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555555;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .home__section .home__img .img__box {
@@ -294,5 +325,6 @@ img {
 .home__section .home__img .img__box img {
   width: 100%;
   border-radius: 50%;
+  border: 10px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */
