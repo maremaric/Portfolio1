@@ -552,6 +552,49 @@ img {
     color: $Color1;
 }
 
+.about__section .tab__content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about__section .skills .skill__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.about__section .skills .skill__item p {
+    font-size: 16px;
+    color: $TextBlock-600;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.about__section .skills .skill__item .progress {
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about__section .skills .skill__item .progress__bar {
+    background-color: $TextBlock-600;
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.about__section .skills .skill__item .progress__bar span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $TextBlock-600;
+    margin-top: -40px;
+}
+
 
 
 

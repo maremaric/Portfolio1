@@ -631,4 +631,51 @@ img {
 .about__section .about__tabs .tab__item.active {
   color: #f50707;
 }
+
+.about__section .tab__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about__section .skills .skill__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.about__section .skills .skill__item p {
+  font-size: 16px;
+  color: #666666;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+
+.about__section .skills .skill__item .progress {
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.about__section .skills .skill__item .progress__bar {
+  background-color: #666666;
+  height: 6px;
+  left: 7px;
+  top: 7px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.about__section .skills .skill__item .progress__bar span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+  margin-top: -40px;
+}
 /*# sourceMappingURL=style.css.map */
