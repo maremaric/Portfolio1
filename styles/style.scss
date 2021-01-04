@@ -474,6 +474,10 @@ img {
     border-radius: 5px;
 }
 
+.about__section .about__img .social__links {
+    background-color: red;
+}
+
 .about__section .about__info {
     flex: 0 0 60%;
     max-width: 60%;
@@ -490,3 +494,9 @@ img {
 .about__section .about__info span {
     font-weight: 600;
 }
+
+.about__section .about__info .btn-1 {
+    margin: 30px 20px 0 0;
+}
+
+
