@@ -600,4 +600,35 @@ img {
 .about__section .about__info .btn-1 {
   margin: 30px 20px 0 0;
 }
+
+.about__section .about__tabs {
+  padding: 60px 15px 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about__section .about__tabs .tab__item {
+  display: inline-block;
+  margin: 0 5px 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.about__section .about__tabs .tab__item:hover:not(.active) {
+  opacity: 0.6;
+}
+
+.about__section .about__tabs .tab__item.active {
+  color: #f50707;
+}
 /*# sourceMappingURL=style.css.map */
