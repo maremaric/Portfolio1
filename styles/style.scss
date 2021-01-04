@@ -453,7 +453,7 @@ img {
 
 // About section
 .about__section {
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
     min-height: 100vh;
 }
 
@@ -557,10 +557,15 @@ img {
     max-width: 100%;
 }
 
+.about__section .skills {
+    padding: 0 0 40px;
+}
+
 .about__section .skills .skill__item {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 15px;
+    margin-bottom: 40px;
 }
 
 .about__section .skills .skill__item p {
