@@ -549,7 +549,33 @@ img {
 }
 
 .about__section .about__img .social__links {
-  background-color: red;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about__section .about__img .social__links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+  margin: 0 4px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about__section .about__img .social__links a i {
+  line-height: 40px;
+}
+
+.about__section .about__img .social__links a:after {
+  border-radius: 50%;
+}
+
+.about__section .about__img .social__links a:hover {
+  color: #f50707;
 }
 
 .about__section .about__info {
