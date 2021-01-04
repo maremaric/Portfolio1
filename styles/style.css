@@ -282,6 +282,7 @@ img {
           flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .section__title h2 {
@@ -526,5 +527,43 @@ img {
 .about__section {
   padding: 80px 0 80px;
   min-height: 100vh;
+}
+
+.about__section .about__img {
+  padding: 0 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.about__section .about__img .img__box {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.about__section .about__img .img__box img {
+  width: 100%;
+  border: 10px solid transparent;
+  border-radius: 5px;
+}
+
+.about__section .about__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  max-width: 60%;
+  padding: 0 15px;
+}
+
+.about__section .about__info p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: #666666;
+}
+
+.about__section .about__info span {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
