@@ -604,5 +604,48 @@ img {
     padding-bottom: 80px;
 }
 
+.about__section .timeline {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.about__section .timeline:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: $BgBlock-100;
+    position: absolute;
+}
+
+.about__section .timeline .timeline__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.about__section .timeline .timeline__item:nth-child(odd) {
+    padding-right: calc(50% + 50px);
+    text-align: right;
+}
+
+.about__section .timeline .timeline__item:nth-child(even) {
+    padding-left: calc(50% + 50px);
+}
+
+.about__section .timeline .timeline__item__inner {
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.about__section .timeline .timeline__item__inner .icon {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+}
 
 
