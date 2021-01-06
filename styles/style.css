@@ -275,6 +275,32 @@ img {
   }
 }
 
+@-webkit-keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 .section__title {
   padding: 0 15px;
   -webkit-box-flex: 0;
@@ -637,6 +663,13 @@ img {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
+  display: none;
+}
+
+.about__section .tab__content.active {
+  display: block;
+  -webkit-animation: fadeInTop 0.5s ease;
+          animation: fadeInTop 0.5s ease;
 }
 
 .about__section .skills {
@@ -684,6 +717,7 @@ img {
   margin-top: -40px;
 }
 
+.about__section .education,
 .about__section .experience {
   padding-bottom: 80px;
 }
