@@ -737,12 +737,46 @@ img {
 }
 
 .service__section .service__item {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     padding: 15px;
 }
 
 .service__section .service__item__inner {
     padding: 50px 15px;
+    border-radius: 5px;
+    text-align: center;
 }
+
+.service__section .service__item__inner .icon {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.service__section .service__item__inner .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease;
+}
+
+.service__section .service__item__inner h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $TextBlock-700;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.service__section .service__item__inner p {
+    font-size: 16px;
+    color: $TextBlock-600;
+    margin: 0;
+    line-height: 26px;
+}
+
 
