@@ -1027,4 +1027,23 @@ img {
   color: #666666;
   text-transform: capitalize;
 }
+
+.portfolio__popup {
+  background-color: #eff0f4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.portfolio__popup .pp__img {
+  max-width: 300px;
+}
+
+.portfolio__popup .pp__main {
+  min-height: 100vh;
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */
