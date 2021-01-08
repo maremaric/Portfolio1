@@ -935,4 +935,26 @@ img {
   max-width: 100%;
   text-align: center;
 }
+
+.portfolio__section .filter__item {
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666666;
+  text-transform: capitalize;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio__section .filter__item:hover:not(.active) {
+  opacity: 0.6;
+}
+
+.portfolio__section .filter__item.active {
+  color: #f50707;
+}
 /*# sourceMappingURL=style.css.map */
