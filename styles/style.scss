@@ -9,6 +9,7 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     background-color: $BgBlock-50;
+    overflow-y: hidden;
 }
 
 *:not(i) {
@@ -915,15 +916,58 @@ img {
     width: 100%;
     height: 100%;
     z-index: 1000;
+    overflow-y: auto;
 }
 
 .portfolio__popup .pp__img {
-    max-width: 300px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .portfolio__popup .pp__main {
     min-height: 100vh;
+    max-width: 1350px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio__popup .pp__main__inner {
+    background-color: gray;
+    padding: 70px 0 50px;
+    position: relative;
+}
+
+.portfolio__popup .pp__project__details__btn {
+    position: absolute;
+    left: 0;
+    background-color: red;
+    top: 15px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+
+.portfolio__popup .pp__close {
+    position: absolute;
+    right: 0;
     background-color: blue;
+    height: 40px;
+    width: 40px;
+    top: 15px;
+}
+
+.portfolio__popup .pp__counter {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    bottom: 5px;
 }
 
 
