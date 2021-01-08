@@ -813,6 +813,15 @@ img {
     min-height: 100vh;
 }
 
+.portfolio__section .section__title {
+    margin-bottom: 40px;
+}
 
+.portfolio__section .portfolio__filter {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
 
 
