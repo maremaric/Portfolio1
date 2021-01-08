@@ -822,6 +822,7 @@ img {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .portfolio__section .filter__item {
@@ -845,5 +846,34 @@ img {
     color: $Color1;
 }
 
+.portfolio__section .portfolio__item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.portfolio__section .portfolio__item__img img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.portfolio__section .portfolio__item__img .view__project {
+    display: none;
+}
+
+.portfolio__section .portfolio__item__inner {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.portfolio__section .portfolio__item__details {
+    display: none;
+}
+
+.portfolio__section .portfolio__item__inner p {
+    font-size: 16px;
+    margin: 10px 0 0;
+    color: $TextBlock-600;
+}
 
 
