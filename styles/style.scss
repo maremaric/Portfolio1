@@ -850,20 +850,48 @@ img {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio__section .portfolio__item__img img {
     border-radius: 5px;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+.portfolio__section .portfolio__item__inner:hover .portfolio__item__img img {
+    transform: translateY(-25px);
+}
+
+.portfolio__section .portfolio__item__img {
+    position: relative;
 }
 
 .portfolio__section .portfolio__item__img .view__project {
-    display: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: $Color1;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transform: translateY(-5px);
+    z-index: -1;
+    opacity: 0;
+}
+
+.portfolio__section .portfolio__item__inner:hover .view__project {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .portfolio__section .portfolio__item__inner {
     padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .portfolio__section .portfolio__item__details {
@@ -874,6 +902,7 @@ img {
     font-size: 16px;
     margin: 10px 0 0;
     color: $TextBlock-600;
+    text-transform: capitalize;
 }
 
 
