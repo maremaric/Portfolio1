@@ -920,7 +920,8 @@ img {
 }
 
 .portfolio__popup .pp__img {
-    max-width: 100%;
+    // max-width: 100%;
+    max-width: 700px;
     width: auto;
     height: auto;
     padding: 10px;
@@ -938,7 +939,6 @@ img {
 }
 
 .portfolio__popup .pp__main__inner {
-    background-color: gray;
     padding: 70px 0 50px;
     position: relative;
 }
@@ -946,20 +946,43 @@ img {
 .portfolio__popup .pp__project__details__btn {
     position: absolute;
     left: 0;
-    background-color: red;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $Color1;
     top: 15px;
     cursor: pointer;
+    padding: 0 15px;
     height: 40px;
     line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.portfolio__popup .pp__project__details__btn i {
+    margin-left: 4px;
+}
+
+.portfolio__popup .pp__project__details__btn:after {
+    border-radius: 30px;
 }
 
 .portfolio__popup .pp__close {
     position: absolute;
     right: 0;
-    background-color: blue;
+    border-radius: 50%;
     height: 40px;
     width: 40px;
     top: 15px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    color: $TextBlock-600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio__popup .pp__close:after {
+    border-radius: 50%;
 }
 
 .portfolio__popup .pp__counter {
