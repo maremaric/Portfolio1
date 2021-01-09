@@ -920,8 +920,7 @@ img {
 }
 
 .portfolio__popup .pp__img {
-    // max-width: 100%;
-    max-width: 700px;
+    max-width: 100%;
     width: auto;
     height: auto;
     padding: 10px;
@@ -991,6 +990,35 @@ img {
     height: 40px;
     line-height: 40px;
     bottom: 5px;
+    font-size: 16px;
+    color: $TextBlock-600;
 }
 
+.portfolio__popup .pp__prev,
+.portfolio__popup .pp__next {
+    position: fixed;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.portfolio__popup .pp__prev i,
+.portfolio__popup .pp__next i {
+    line-height: 40px;
+}
+
+.portfolio__popup .pp__prev i {
+    transform: rotate(180deg);
+}
+
+.portfolio__popup .pp__prev {
+    left: 15px;
+}
+
+.portfolio__popup .pp__next {
+    right: 15px;
+}
 
