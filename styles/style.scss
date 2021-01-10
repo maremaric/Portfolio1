@@ -917,12 +917,17 @@ img {
     height: 100%;
     z-index: 1000;
     overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .portfolio__popup .pp__details {
     max-width: 1350px;
     width: calc(85% + 30px);
     margin: auto;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .portfolio__popup .pp__details__inner {
@@ -948,6 +953,10 @@ img {
     margin: 0 0 15px;
     border-bottom: 1px solid $BgBlock-100;
     padding-bottom: 10px;
+}
+
+.portfolio__popup .pp__title p span {
+    font-weight: 400;
 }
 
 .portfolio__popup .pp__project__details h3 {
@@ -979,6 +988,18 @@ img {
 
 .portfolio__popup .info ul li {
     display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: $TextBlock-600;
+    font-size: 16px;
+}
+
+.portfolio__popup .info ul li span {
+    font-weight: 400;
+}
+
+.portfolio__popup .info ul li:last-child {
+    margin-bottom: 0;
 }
 
 .portfolio__popup .separator {
