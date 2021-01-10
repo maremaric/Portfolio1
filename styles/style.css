@@ -1059,6 +1059,24 @@ img {
   color: #000000;
   text-transform: capitalize;
   font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.portfolio__popup .pp__title p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+.portfolio__popup .pp__project__details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 0 15px;
+  text-transform: capitalize;
 }
 
 .portfolio__popup .description {
@@ -1069,12 +1087,23 @@ img {
   padding: 0 15px;
 }
 
+.portfolio__popup .description p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 26px;
+  margin: 0;
+}
+
 .portfolio__popup .info {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
   max-width: 35%;
   padding: 0 15px;
+}
+
+.portfolio__popup .info ul li {
+  display: block;
 }
 
 .portfolio__popup .separator {
