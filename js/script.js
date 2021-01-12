@@ -28,4 +28,18 @@
 
 /*-------------------------- Portfolio filter and popup ------------------------*/
 
+(() => {
+    const filterContainer = document.querySelector(".portfolio__filter"),
+    portfolioItemsFilter = document.querySelector(".portfolio__items"),
+    portfolioItems = document.querySelector(".portfolio__item"),
+    popup = document.querySelector(".portfolio__popup"),
+    prevBtn = popup.querySelector(".pp__prev"),
+    nextBtn = popup.querySelector(".pp__next"),
+    closeBtn = popup.querySelector(".pp__close"),
+    projectDetailsContainer = popup.querySelector(".pp__details"),
+    projectDetailsBtn = popup.querySelector(".pp__project__details__btn");
+    let itemIndex, slideIndex, screenshots;
 
+    /* Filter portfolio items */
+
+})();
