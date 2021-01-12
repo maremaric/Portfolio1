@@ -41,5 +41,19 @@
     let itemIndex, slideIndex, screenshots;
 
     /* Filter portfolio items */
+    filterContainer.addEventListener("click", (event) => {
+        if(event.target.classList.contains("filter__item") && !event.target.classList.contains("active")) {
+            // deactivate existing active 'filter__item'
+            filterContainer.querySelector(".active").classList.remove("outer__shadow","active");
+            // activate new 'filter item'
+            event.target.classList.add("active","outer__shadow");
+            const target = event.target.getAttribute("data-target");
+            portfolioItems.forEach((item) => {
+                if(target === item.getAttribute("data-category")) {
+                    
+                }
+            })
+        }
+    })
 
 })();
