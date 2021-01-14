@@ -972,6 +972,16 @@ img {
       flex-wrap: wrap;
 }
 
+.portfolio__section .portfolio__item.hide {
+  display: none;
+}
+
+.portfolio__section .portfolio__item.show {
+  display: block;
+  -webkit-animation: fadeInTop 0.5s ease;
+          animation: fadeInTop 0.5s ease;
+}
+
 .portfolio__section .portfolio__item__img img {
   border-radius: 5px;
   width: 100%;

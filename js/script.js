@@ -29,9 +29,10 @@
 /*-------------------------- Portfolio filter and popup ------------------------*/
 
 (() => {
+    
     const filterContainer = document.querySelector(".portfolio__filter"),
-    portfolioItemsFilter = document.querySelector(".portfolio__items"),
-    portfolioItems = document.querySelector(".portfolio__item"),
+    portfolioItemsContainer = document.querySelector(".portfolio__items"),
+    portfolioItems = document.getElementsByClassName("portfolio__item"),
     popup = document.querySelector(".portfolio__popup"),
     prevBtn = popup.querySelector(".pp__prev"),
     nextBtn = popup.querySelector(".pp__next"),
@@ -40,19 +41,24 @@
     projectDetailsBtn = popup.querySelector(".pp__project__details__btn");
     let itemIndex, slideIndex, screenshots;
 
-    /* Filter portfolio items */
+    // filter portfolio items
     filterContainer.addEventListener("click", (event) => {
         if(event.target.classList.contains("filter__item") && !event.target.classList.contains("active")) {
             // deactivate existing active 'filter__item'
             filterContainer.querySelector(".active").classList.remove("outer__shadow","active");
-            // activate new 'filter item'
+            // activeate new 'filter item'
             event.target.classList.add("active","outer__shadow");
             const target = event.target.getAttribute("data-target");
-            portfolioItems.forEach((item) => {
-                if(target === item.getAttribute("data-category")) {
-                    
+
+            [...portfolioItems].forEach((item) => {
+                if(target === item.getAttribute("data-category") || target === "all") {
+                    item.classList.remove("hide");
+                    item.classList.add("show");
+                } else {
+                    item.classList.remove("show");
+                    item.classList.add("hide");
                 }
-            })
+            });
         }
     })
 
