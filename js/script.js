@@ -90,7 +90,10 @@ function bodyScrollingToggle() {
     }
 
     function popupSlideshow() {
-        
+        const imgSrc = screenshots[slideIndex];
+        const popupImg = popup.querySelector(".pp__img");
+        // activate loader until the popupImg loaded
+        popupImg.src = imgSrc;
     }
 
 })();
