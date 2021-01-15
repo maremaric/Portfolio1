@@ -60,6 +60,13 @@
                 }
             });
         }
-    })
+    });
+
+    portfolioItemsContainer.addEventListener("click", (event) => {
+        if(event.target.closest(".portfolio__item__inner")) {
+            const portfolioItem = event.target.closest(".portfolio__item__inner").parentElement;
+            console.log(portfolioItem);
+        }
+    });
 
 })();
