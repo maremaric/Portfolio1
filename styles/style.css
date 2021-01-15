@@ -1062,6 +1062,42 @@ img {
   opacity: 1;
 }
 
+.portfolio__popup .pp__loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1005;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.portfolio__popup .pp__loader.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio__popup .pp__loader div {
+  height: 40px;
+  width: 40px;
+  border: 3px solid #f50707;
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
 .portfolio__popup .pp__details {
   max-width: 1350px;
   width: calc(85% + 30px);
