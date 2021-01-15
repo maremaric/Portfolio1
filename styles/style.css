@@ -7,6 +7,10 @@ body {
   background-color: #eff0f4;
 }
 
+body.stop__scrolling {
+  overflow-y: hidden;
+}
+
 *:not(i) {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -1046,9 +1050,16 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  overflow-y: auto;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio__popup.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .portfolio__popup .pp__details {

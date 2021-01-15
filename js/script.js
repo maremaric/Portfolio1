@@ -24,6 +24,10 @@
     })
 })();
 
+function bodyScrollingToggle() {
+    document.body.classList.toggle("stop__scrolling");
+}
+
 /*-------------------------- About setion tabs ends ------------------------*/
 
 /*-------------------------- Portfolio filter and popup ------------------------*/
@@ -72,10 +76,20 @@
             screenshots = screenshots.split(",");
             slideIndex = 0;
             popupToggle();
+            popupSlideshow();
         }
     });
 
+    closeBtn.addEventListener("click", () => {
+        popupToggle();
+    });
+
     function popupToggle() {
+        popup.classList.toggle("open");
+        bodyScrollingToggle();
+    }
+
+    function popupSlideshow() {
         
     }
 
