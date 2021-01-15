@@ -65,8 +65,18 @@
     portfolioItemsContainer.addEventListener("click", (event) => {
         if(event.target.closest(".portfolio__item__inner")) {
             const portfolioItem = event.target.closest(".portfolio__item__inner").parentElement;
-            console.log(portfolioItem);
+            // get the portfolioItem index
+            itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
+            screenshots = portfolioItems[itemIndex].querySelector(".portfolio__item__img img").getAttribute("data-screenshots");
+            // convert screensfots into array
+            screenshots = screenshots.split(",");
+            slideIndex = 0;
+            popupToggle();
         }
     });
+
+    function popupToggle() {
+        
+    }
 
 })();
