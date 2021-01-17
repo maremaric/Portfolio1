@@ -1199,6 +1199,8 @@ img {
 
 .testimonial__section .testi__slider__container {
     display: flex;
+    transition: margin 1s ease;
+    align-items: center;
 }
 
 .testimonial__section .testi__item {
