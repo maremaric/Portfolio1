@@ -72,8 +72,16 @@ function bodyScrollingToggle() {
             // get the portfolioItem index
             itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
             screenshots = portfolioItems[itemIndex].querySelector(".portfolio__item__img img").getAttribute("data-screenshots");
-            // convert screensfots into array
+            // convert screenshots into array
             screenshots = screenshots.split(",");
+            if(screenshots.length === 1) {
+                prevBtn.style.display = "none";
+                nextBtn.style.display = "none";
+            } else {
+                prevBtn.style.display = "block";
+                nextBtn.style.display = "block";
+            }
+
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
@@ -93,7 +101,38 @@ function bodyScrollingToggle() {
         const imgSrc = screenshots[slideIndex];
         const popupImg = popup.querySelector(".pp__img");
         // activate loader until the popupImg loaded
+        popup.querySelector(".pp__loader").classList.add("active");
         popupImg.src = imgSrc;
+        popupImg.onload = () => {
+            // deactivate loader after the popupImg loaded
+            popup.querySelector(".pp__loader").classList.remove("active");
+        }
+
+        
+        screenshots = screenshots.map(function (el) {
+            return el.trim();
+        });
+        
+        for(let i = 0; i < screenshots.length; i++) {
+            if(screenshots[i] === "") {
+                screenshots.pop()
+            }
+        }
+        
+        console.log(screenshots);
+       
+        popup.querySelector(".pp__counter").innerHTML = (slideIndex + 1) + " of " + screenshots.length;
+
     }
+
+    // next slide
+    nextBtn.addEventListener("click", () => {
+        if(slideIndex === screenshots.length - 1) {
+            slideIndex = 0;
+        } else {
+            slideIndex++;
+        }
+        popupSlideshow();
+    })
 
 })();
