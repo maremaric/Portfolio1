@@ -1381,4 +1381,30 @@ img {
   font-size: 16px;
   color: #555555;
 }
+
+.testimonial__section .testi__slider__nav {
+  margin: 30px;
+  text-align: center;
+}
+
+.testimonial__section .testi__slider__nav span {
+  height: 40px;
+  width: 40px;
+  color: #f50707;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.testimonial__section .testi__slider__nav span i {
+  line-height: 40px;
+}
+
+.testimonial__section .testi__slider__nav span:after {
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
