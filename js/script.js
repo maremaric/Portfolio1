@@ -85,6 +85,7 @@ function bodyScrollingToggle() {
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
+            popupDetails();
         }
     });
 
@@ -119,7 +120,7 @@ function bodyScrollingToggle() {
             }
         }
         
-        console.log(screenshots);
+        // console.log(screenshots);
        
         popup.querySelector(".pp__counter").innerHTML = (slideIndex + 1) + " of " + screenshots.length;
 
@@ -133,6 +134,41 @@ function bodyScrollingToggle() {
             slideIndex++;
         }
         popupSlideshow();
-    })
+        // console.log("slideIndex: " + slideIndex);
+    });
+
+    // prev slide
+    prevBtn.addEventListener("click", () => {
+        if(slideIndex === 0) {
+            slideIndex = screenshots.length - 1
+        } else {
+            slideIndex--;
+        }
+        popupSlideshow();
+        // console.log("slideIndex: " + slideIndex);
+    });
+
+    function popupDetails() {
+        
+    }
+
+    projectDetailsBtn.addEventListener("click", () => {
+        popupDetailsToggle();
+    });
+
+    function popupDetailsToggle() {
+        if(projectDetailsContainer.classList.contains("active")) {
+            projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
+            projectDetailsBtn.querySelector("i").classList.add("fa-plus");
+            projectDetailsContainer.classList.remove("active");
+            projectDetailsContainer.style.maxHeight = 0 + "px";
+        } else {
+            projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
+            projectDetailsBtn.querySelector("i").classList.add("fa-minus");
+            projectDetailsContainer.classList.add("active");
+            projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
+            popup.scrollTo(0,projectDetailsContainer.offsetTop);
+        }
+    }
 
 })();

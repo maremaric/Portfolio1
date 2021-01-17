@@ -975,6 +975,11 @@ img {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.portfolio__popup .pp__details.active {
+    opacity: 1;
 }
 
 .portfolio__popup .pp__details__inner {
