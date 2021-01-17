@@ -1426,4 +1426,44 @@ img {
   padding: 80px 0 80px;
   min-height: 100vh;
 }
+
+.contact__section .contact__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__section .contact__item__inner {
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact__section .contact__item__inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555555;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+
+.contact__section .contact__item__inner i {
+  font-size: 25px;
+  color: #f50707;
+}
+
+.contact__section .contact__item__inner p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
 /*# sourceMappingURL=style.css.map */
