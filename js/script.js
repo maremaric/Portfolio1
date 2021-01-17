@@ -149,7 +149,21 @@ function bodyScrollingToggle() {
     });
 
     function popupDetails() {
-        
+
+        // if portfolio__item__details not exists
+        // if(!portfolioItems[itemIndex].querySelector(".portfolio__item__details")) {
+        //     projectDetailsBtn.style.display = "none";
+        //     return; /* end function execution*/
+        // }
+        // projectDetailsBtn.style.display = "block"; 
+
+        // get the project details
+        const details = portfolioItems[itemIndex].querySelector(".portfolio__item__details").innerHTML;
+        popup.querySelector(".pp__project__details").innerHTML = details;
+        const title = portfolioItems[itemIndex].querySelector(".portfolio__item__title").innerHTML;
+        popup.querySelector(".pp__title h2").innerHTML = title;
+        const category = portfolioItems[itemIndex].getAttribute("data-category");
+        popup.querySelector(".pp__project__category").innerHTML = category;
     }
 
     projectDetailsBtn.addEventListener("click", () => {
