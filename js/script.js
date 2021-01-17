@@ -163,7 +163,7 @@ function bodyScrollingToggle() {
         const title = portfolioItems[itemIndex].querySelector(".portfolio__item__title").innerHTML;
         popup.querySelector(".pp__title h2").innerHTML = title;
         const category = portfolioItems[itemIndex].getAttribute("data-category");
-        popup.querySelector(".pp__project__category").innerHTML = category;
+        popup.querySelector(".pp__project__category").innerHTML = category.split("-").join(" ");
     }
 
     projectDetailsBtn.addEventListener("click", () => {

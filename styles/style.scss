@@ -1009,6 +1009,7 @@ img {
 
 .portfolio__popup .pp__title p span {
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .portfolio__popup .pp__project__details h3 {
@@ -1048,6 +1049,10 @@ img {
 
 .portfolio__popup .info ul li span {
     font-weight: 400;
+}
+
+.portfolio__popup .info ul li a {
+    color: $Color1;
 }
 
 .portfolio__popup .info ul li:last-child {
