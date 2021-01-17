@@ -28,7 +28,7 @@ function bodyScrollingToggle() {
     document.body.classList.toggle("hidden__scrolling");
 }
 
-/*-------------------------- About setion tabs ends ------------------------*/
+/*-------------------------- About setion tabs ends ----------------------------*/
 
 /*-------------------------- Portfolio filter and popup ------------------------*/
 
@@ -193,3 +193,26 @@ function bodyScrollingToggle() {
     }
 
 })();
+
+/*-------------------------- Portfolio filter and popup end ------------------------*/
+
+/*-------------------------- Testimonial slider --------------------------*/
+
+(() => {
+
+    const sliderContainer = document.querySelector(".testi__slider__container"),
+    slides = sliderContainer.querySelectorAll(".testi__item"),
+    slideWidth = sliderContainer.offsetWidth,
+    prevBtn = document.querySelector(".testi__slider__nav .prev"),
+    nextBtn = document.querySelector(".testi__slider__nav .next");
+    let slideIndex = 0;
+    
+    // set width of all slides
+    slides.forEach((slide) => {
+        slide.style.width = slideWidth + "px";
+    });
+    // set width of sliderContainer
+    sliderContainer.style.width = slideWidth * slides.length + "px";
+
+})();
+

@@ -1332,10 +1332,18 @@ img {
   width: 100%;
   max-width: 600px;
   margin: auto;
+  padding: 0 15px;
 }
 
 .testimonial__section .testi__slider {
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.testimonial__section .testi__slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .testimonial__section .testi__item {
@@ -1380,6 +1388,7 @@ img {
   font-weight: 600;
   font-size: 16px;
   color: #555555;
+  text-transform: capitalize;
 }
 
 .testimonial__section .testi__slider__nav {
