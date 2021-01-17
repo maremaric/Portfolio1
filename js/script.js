@@ -25,7 +25,7 @@
 })();
 
 function bodyScrollingToggle() {
-    document.body.classList.toggle("stop__scrolling");
+    document.body.classList.toggle("hidden__scrolling");
 }
 
 /*-------------------------- About setion tabs ends ------------------------*/
@@ -91,6 +91,9 @@ function bodyScrollingToggle() {
 
     closeBtn.addEventListener("click", () => {
         popupToggle();
+        if(projectDetailsContainer.classList.contains("active")) {
+            popupDetailsToggle();
+        }
     });
 
     function popupToggle() {
@@ -109,14 +112,13 @@ function bodyScrollingToggle() {
             popup.querySelector(".pp__loader").classList.remove("active");
         }
 
-        
         screenshots = screenshots.map(function (el) {
             return el.trim();
         });
         
         for(let i = 0; i < screenshots.length; i++) {
             if(screenshots[i] === "") {
-                screenshots.pop()
+                screenshots.pop();
             }
         }
         
@@ -151,18 +153,23 @@ function bodyScrollingToggle() {
     function popupDetails() {
 
         // if portfolio__item__details not exists
-        // if(!portfolioItems[itemIndex].querySelector(".portfolio__item__details")) {
-        //     projectDetailsBtn.style.display = "none";
-        //     return; /* end function execution*/
-        // }
-        // projectDetailsBtn.style.display = "block"; 
+        if(!portfolioItems[itemIndex].querySelector(".portfolio__item__details")) {
+            projectDetailsBtn.style.display = "none";
+            return; /* end function execution*/
+        }
+        projectDetailsBtn.style.display = "block"; 
 
         // get the project details
         const details = portfolioItems[itemIndex].querySelector(".portfolio__item__details").innerHTML;
+        // set the project details
         popup.querySelector(".pp__project__details").innerHTML = details;
+        // get the project title
         const title = portfolioItems[itemIndex].querySelector(".portfolio__item__title").innerHTML;
+        // set the project title
         popup.querySelector(".pp__title h2").innerHTML = title;
+        // get the project category
         const category = portfolioItems[itemIndex].getAttribute("data-category");
+        // set the project category
         popup.querySelector(".pp__project__category").innerHTML = category.split("-").join(" ");
     }
 

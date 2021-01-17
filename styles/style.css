@@ -7,7 +7,7 @@ body {
   background-color: #eff0f4;
 }
 
-body.stop__scrolling {
+body.hidden__scrolling {
   overflow-y: hidden;
 }
 
