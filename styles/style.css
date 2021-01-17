@@ -1322,4 +1322,63 @@ img {
 .portfolio__popup .pp__next {
   right: 15px;
 }
+
+.testimonial__section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.testimonial__section .testi__box {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial__section .testi__slider {
+  border-radius: 5px;
+}
+
+.testimonial__section .testi__item {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial__section .testi__item i {
+  position: absolute;
+  font-size: 30px;
+  color: #666666;
+  opacity: 0.1;
+}
+
+.testimonial__section .testi__item i.left {
+  left: 5px;
+  top: 5px;
+}
+
+.testimonial__section .testi__item i.right {
+  right: 5px;
+  bottom: 5px;
+}
+
+.testimonial__section .testi__item p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+  margin: 0 0 30px;
+}
+
+.testimonial__section .testi__item img {
+  max-width: 70px;
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonial__section .testi__item span {
+  display: block;
+  margin: 10px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #555555;
+}
 /*# sourceMappingURL=style.css.map */
