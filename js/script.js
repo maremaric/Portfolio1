@@ -8,10 +8,17 @@
     closeNavBtn = navMenu.querySelector(".close__nav__menu");
 
     hmaburgerBtn.addEventListener("click", showNavMenu);
+    closeNavBtn.addEventListener("click", hideNavMenu);
 
     function showNavMenu() {
+        navMenu.classList.add("open");
+    };
 
-    }
+    function hideNavMenu() {
+        navMenu.classList.remove("open");
+    };
+
+    
 
 })();
 
