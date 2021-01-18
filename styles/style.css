@@ -9,6 +9,13 @@
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.style__switcher.open {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
 }
 
 .style__switcher .s__icon {
@@ -50,11 +57,43 @@
   text-transform: capitalize;
 }
 
+.style__switcher .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .style__switcher .colors span {
   display: inline-block;
   height: 30px;
   width: 30px;
-  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.style__switcher .color-1 {
+  background-color: #f50707;
+}
+
+.style__switcher .color-2 {
+  background-color: #f59609;
+}
+
+.style__switcher .color-3 {
+  background-color: #0af098;
+}
+
+.style__switcher .color-4 {
+  background-color: #0b9bee;
+}
+
+.style__switcher .color-5 {
+  background-color: #fb839e;
 }
 
 /* Global style */
