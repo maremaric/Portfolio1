@@ -424,6 +424,42 @@ img {
   overflow-y: auto;
 }
 
+.fade__out__effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eff0f4;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.fade__out__effect.active {
+  visibility: visible;
+  z-index: 1000;
+  -webkit-animation: fadeOut 0.3s ease-out;
+          animation: fadeOut 0.3s ease-out;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .nav__menu.open {
   visibility: visible;
   opacity: 1;
