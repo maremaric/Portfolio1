@@ -1,0 +1,57 @@
+.style__switcher {
+    position: fixed;
+    right: 0;
+    top: 77px;
+    padding: 15px;
+    width: 200px;
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.style__switcher .s__icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: $TextBlock-900;
+    cursor: pointer;
+    right: 100%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.style__switcher .s__icon i {
+    line-height: 40px;
+}
+
+.style__switcher .s__icon:after {
+    border-radius: 50%;
+}
+
+.style__switcher .style__toggler {
+    top: 0;
+}
+
+.style__switcher .day__night {
+    top: 55px;
+}
+
+.style__switcher h4 {
+    margin: 0 0 10px;
+    color: $TextBlock-700;
+    font-style: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.style__switcher .colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+}
+
+

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" />
-    <!-- <link rel="stylesheet" href="./styles/skins/_color-1.scss" /> -->
     <link rel="stylesheet" href="./styles/font-awesome.css" />
     <title>Portfolio</title>
 </head>
@@ -784,14 +783,21 @@
 <!-- Portfolio popup end -->
 
 <!-- Style switcher start -->
-<div class="style__switcher">
-    <div class="style__toggler">
+<div class="style__switcher outer__shadow">
+    <div class="style__toggler s__icon outer__shadow hover__in__shadow">
         <i class="fas fa-cog fa-spin"></i>
     </div>
-    <div class="day__night">
+    <div class="day__night s__icon outer__shadow hover__in__shadow">
         <i class="fas fa-moon"></i>
     </div>
     <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
 </div>
 <!-- Style switcher end -->
 
