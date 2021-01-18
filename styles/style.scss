@@ -253,6 +253,10 @@ img {
     color: $Color1;
 }
 
+.section.hide {
+    display: none;
+}
+
 // ---------------------------------------------------------------------
 
 /* Header */
@@ -336,6 +340,13 @@ img {
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
+}
+
+.nav__menu.open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+    transition: all 0.3s ease-in;
 }
 
 .nav__menu .close__nav__menu {

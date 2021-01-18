@@ -1,4 +1,21 @@
 
+/*-------------------------- Navigation menu start --------------------------*/
+
+(() => {
+
+    const hmaburgerBtn = document.querySelector(".hamburger__btn"),
+    navMenu = document.querySelector(".nav__menu"),
+    closeNavBtn = navMenu.querySelector(".close__nav__menu");
+
+    hmaburgerBtn.addEventListener("click", showNavMenu);
+
+    function showNavMenu() {
+
+    }
+
+})();
+
+/*-------------------------- Navigation menu end --------------------------*/
 
 /*-------------------------- About setion tabs ------------------------*/
 
@@ -243,4 +260,20 @@ function bodyScrollingToggle() {
     slider();
 
 })();
+
+/*-------------------------- Testimonial slider end --------------------------*/
+
+/*-------------------------- Hide all sections except active --------------------------*/
+
+(() => {
+
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((section) => {
+        if(!section.classList.contains("active")) {
+            section.classList.add("hide");
+        }
+    });
+
+})();
+
 
