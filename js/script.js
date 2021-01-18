@@ -41,6 +41,27 @@
                 // active new 'section'
                 document.querySelector(hash).classList.add("active");
                 document.querySelector(hash).classList.remove("hide");
+                // deactivate existing active navigation menu 'link__item'
+                navMenu.querySelector(".active").classList.add("outer__shadow", "hover__in__shadow");
+                navMenu.querySelector(".active").classList.remove("active", "inner__shadow");
+                // if clicked 'link__item' id contained within the navigation menu
+                if(navMenu.classList.contains("open")) {
+                    // active new navigation menu 'link__item'
+                    event.target.classList.add("active","inner__shadow");
+                    event.target.classList.remove("outer__shadow","hover__in__shadow");
+                    // hide navigation menu
+                    hideNavMenu();
+                } else {
+                    let navItems = navMenu.querySelectorAll(".link__item");
+                    [...navItems].forEach((item) => {
+                        if(hash === item.hash) {
+                            // active new navigation menu 'link__item'
+                            item.classList.add("active","inner__shadow");
+                            item.classList.remove("outer__shadow","hover__in__shadow");
+                        }
+                    });
+                    fadeOutEffect();
+                }
             }
         }
     });
