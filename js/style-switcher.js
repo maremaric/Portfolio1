@@ -8,6 +8,23 @@ styleSwitcherToggler.addEventListener("click", () => {
 
 // Hide style - switcher on scroll
 window.addEventListener("scroll", () => {
-    console.log("hi")
+    if(document.querySelector(".style__switcher").classList.toggle("open")) {
+        document.querySelector(".style__switcher").classList.remove("open");
+    }
 });
 
+/*------------------- Theme colors --------------------- */
+
+const alternateStyles = document.querySelectorAll(".alternate__style");
+
+function setActiveStyle(color) {
+    alternateStyles.forEach((style) => {
+        if(color === style.getAttribute("title")) {
+            style.removeAttribute("disabled");
+        } else {
+            style.setAttribute("disabled","true");
+        }
+        console.log(style);
+    });
+    
+}
